@@ -24,6 +24,12 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
+    if (message.content === 'Bvn') {
+      message.channel.send('Hey, bienvenue le nouveau ! Pense à lire le <#371626041418186752>')
+    }
+})
+
+bot.on('message', message => {
     if (message.content === (prefix + 'help')) {
       const embed = new Discord.RichEmbed()
               .setColor('#ff0000')
