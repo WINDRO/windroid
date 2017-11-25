@@ -7,7 +7,7 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: "https://discord.gg/jkS47tE", type: 0 } });
+    bot.user.setPresence({ game: { name: "?help", type: 0 } });
     console.log("Bot Ready !");
 });
 
