@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 const prefix = "?";
 var guild = bot.guilds.get("371622960362029058")
 
-bot.login("");
+bot.login(process.env.TOKEN);
 
 
 bot.on('ready', () => {
