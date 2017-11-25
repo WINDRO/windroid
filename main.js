@@ -18,6 +18,12 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
+    if (message.content === 'Ping') {
+      message.channel.send('pong')
+    }
+})
+
+bot.on('message', message => {
     if (message.content === 'bvn') {
       message.channel.send('Hey, bienvenue le nouveau ! Pense à lire le <#371626041418186752>')
     }
