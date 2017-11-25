@@ -109,6 +109,15 @@ bot.on('message', message => {
     }
 })
 
+bot.on('message', message => {
+    if (message.content === (prefix + 'windroid')) {
+      const embed = new Discord.RichEmbed()
+              .setColor('#ff0000')
+              .addField("À PROPOS DE WINDROID :", "Pour ceux qui ne savent pas encore, je suis un Youtubeur de 700 abonnés et le fondateur d'un serveur discord de plus de 700 membres. \nLa chaine Youtube est en rapport avec la high-tech et l'informatique dans le but d'aider, d'informer et de divertir. \nLe serveur discord a pour but de créer une communauté autour de l'informatique et la high-tech pour travailler sur des projets, se faire aider, discuter, ou plus généralement passer un bon moment. Mais pas que vous pouvez aussi vous faire des amis et trouver des compagnons pour vos jeux préférés et bien plus. ")
+    message.channel.send({embed});
+    }
+})
+
 bot.on('guildMemberAdd', member => {
     const guild1 = member.guild.id;
     var guild = bot.guilds.get("371622960362029058")
