@@ -1,13 +1,13 @@
 const Discord = require ('discord.js')
 const bot = new Discord.Client();
-const prefix = "?";
+const prefix = "/";
 var guild = bot.guilds.get("371622960362029058")
 
 bot.login(process.env.TOKEN);
 
 
 bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: "?help", type: 0 } });
+    bot.user.setPresence({ game: { name: "/help", type: 0 } });
     console.log("Bot Ready !");
 });
 
