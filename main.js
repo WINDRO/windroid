@@ -11,15 +11,9 @@ bot.on('ready', () => {
     console.log("Bot Ready !");
 });
 
-bot.on('message', message => {
-    if (message.content === 'ping') {
-      message.channel.send('pong')
-    }
-})
-
-bot.on('message', message => {
-    if (message.content === 'Ping') {
-      message.channel.send('pong')
+client.on('message', message => {
+    if(message.content === config.prefix + 'ping') {
+    message.reply(`Pong ! (${Math.round(client.ping)} ms)`);
     }
 })
 
