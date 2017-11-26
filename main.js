@@ -39,7 +39,7 @@ bot.on('message', message => {
     if (message.content === (prefix + 'help')) {
       const embed = new Discord.RichEmbed()
               .setColor('#ff0000')
-              .addField("Voici les commandes du bot !", "**?help :** Affiche les commandes du bot \n**?discord :** Les informations sur le serveur \n**?hypesquad :** Informations HypeSquad \n**?radio :** Informations sur la WINDROID RADIO \n**?site :** Affiche les sites web \n**?youtube :** Affiche les chaines YouTube \n**?twitter :** Affiche le twitter \n**?Invitation :** Donne l'invitation du servuer")
+              .addField("Voici les commandes du bot !", "**/help :** Affiche les commandes du bot \n**/discord :** Les informations sur le serveur \n**/hypesquad :** Informations HypeSquad \n**/radio :** Informations sur la WINDROID RADIO \n**/site :** Affiche les sites web \n**/youtube :** Affiche les chaines YouTube \n**/twitter :** Affiche le twitter \n**/invitation :** Donne l'invitation du servuer")
               .addField("Info", "Créateur du bot : WINDROID")
     message.channel.send({embed});
     }
