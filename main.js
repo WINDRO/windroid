@@ -145,7 +145,7 @@ bot.on('guildMemberAdd', member => {
     var guild = bot.guilds.get("371622960362029058")
     var add = bot.channels.get("371622960923934733")
     if(guild1 == guild.id) {
-      member.sendMessage(`**Salut ${member}, bienvenue sur le serveur ${guild.name} !** \n\nCe serveur a pour but de créer une communauté autour de l'informatique et la high-tech pour travailler sur des projets, se faire aider, discuter, ou plus généralement passer un bon moment.\nMais pas que vous pouvez aussi vous faire des amis et trouver des compagnons pour vos jeux préférés et bien plus.\n\nPense à lire le règlement et les informations. \n\n*Voici le lien du serveur pour inviter tes amis :* https://discord.gg/jkS47tE \n\nLien du serveur de la plus grosse radio discord de France : https://discord.gg/u5MNhJe\n\nProfite bien ! :wink:\n\nA bientôt.`);
+      member.sendMessage(`**Salut ${member}, bienvenue sur le serveur ${guild.name} !** \n\nCe serveur a pour but de créer une communauté autour de l'informatique et la high-tech pour travailler sur des projets, se faire aider, discuter, ou plus généralement passer un bon moment.\nMais pas que vous pouvez aussi vous faire des amis et trouver des compagnons pour vos jeux préférés et bien plus.\n\nPense à lire le règlement et les informations. \n\n*Voici le lien du serveur pour inviter tes amis :* https://discord.gg/jkS47tE\n\nA bientôt.:wink:`);
     } else {
       return
     }
