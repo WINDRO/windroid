@@ -145,7 +145,7 @@ bot.on('guildMemberAdd', member => {
     var guild = bot.guilds.get("371622960362029058")
     var add = bot.channels.get("371622960923934733")
     if(guild1 == guild.id) {
-      member.sendMessage(`**Salut ${member}, bienvenue sur le serveur ${guild.name} !** \n\nCe serveur a pour but de créer une communauté autour de l'informatique et la high-tech pour travailler sur des projets, se faire aider, discuter, ou plus généralement passer un bon moment.\nMais pas que vous pouvez aussi vous faire des amis et trouver des compagnons pour vos jeux préférés et bien plus.\n\nPense à lire le règlement et les informations. \n\n*Voici le lien du serveur pour inviter tes amis :* https://discord.gg/jkS47tE\n\nA bientôt.:wink:`);
+      member.sendMessage(`**Salut ${member}, bienvenue sur le serveur ${guild.name} !** \n\nCe serveur a pour but de créer une communauté autour de l'informatique et la high-tech pour travailler sur des projets, se faire aider, discuter, ou plus généralement passer un bon moment.\nMais pas que vous pouvez aussi vous faire des amis et trouver des compagnons pour vos jeux préférés et bien plus.\n\nPense à lire le règlement et les informations. \n\n*Voici le lien du serveur pour inviter tes amis :* https://discord.gg/jkS47tE\n\nA bientôt.:wink: \n\nVoici le serveur 100% dédié à la publicité : https://discord.gg/YSqEt65 \n\nN'hésite pas à rejoindre le serveur de sauvegarde de la communauté : https://discord.gg/NfvFpNx`);
     } else {
       return
     }
