@@ -151,7 +151,7 @@ bot.on('guildMemberAdd', member => {
     }
     });
 
-bot.on('guildMemberDelete', member => {
+bot.on('guildMemberRemove', member => {
     const guild1 = member.guild.id;
     var guild = bot.guilds.get("371622960362029058")
     var add = bot.channels.get("371622960923934733")
