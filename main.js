@@ -150,16 +150,3 @@ bot.on('guildMemberAdd', member => {
       return
     }
     });
-
-bot.on('guildMemberRemove', member => { 
-    const guild1 = member.guild.id; 
-    var guild = bot.guilds.get("37162296036202 9058") 
-    var add = bot.channels.get("371622960923934733") 
-    if(guild1 == guild.id) { 
-        member.sendMessage(`**À bientôt <@${member.id}>, nous sommes vraiment tristes que tu ais quitté le serveur ${guild.name}** 😢 \n\nAfin de que nous puissions améliorer le serveur nous aimerions que tu remplisses sincèrement [**ce sondage**](https://docs.google.com/forms/d/e/1FAIpQLSc-zffBSJ_kshKMjnzHwVOGK2MDwEwy1DlxZ_Tpmfw1XhaLUQ/viewform) qui nous permet de connaître les raisons pour lesquelles tu as quitté le serveur. Cela ne demande que quelques minutes et cela nous aidera à améliorer le serveur. \n\nMerci de ta participation et bonne continuation ! Si tu souhaites revenir n'hésite pas 😉 \n\n*Cordialement, l'équipe ${guild.name}.*`); 
-    } else { 
-        return 
-    } 
-    });
-
-
